@@ -26,15 +26,13 @@ namespace MVVMProjet.Services
 
         var Joueur = await restClient.PostAsync(e);
 
-
     }
     public async Task PutJoueursAsync(string id, Joueur e)
     {
 
         var Joueur = await restClient.PutAsync(id, e);
 
-
-    }
+        }
     public async Task DeleteJoueursAsync(string id)
     {
 
