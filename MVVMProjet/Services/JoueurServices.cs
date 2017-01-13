@@ -13,8 +13,7 @@ namespace MVVMProjet.Services
         RestClientString<Joueur> restClient = new RestClientString<Joueur>("http://localhost:49421/api/Joueurs");
     public async Task<List<Joueur>> getJoueursAsync()
     {
-
-
+            
         var Joueur = await restClient.GetAsync();
         return Joueur;
 
