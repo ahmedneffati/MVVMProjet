@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMProjet.Views.AddUser"
+              xmlns:ViewModels="clr-namespace:MVVMProjet.ViewModels;assembly=MVVMProjet"
+             >
+    <ContentPage.BindingContext>
+        <ViewModels:UserViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout Orientation="Vertical"
+                 Spacing="18">
+        <Label Text="name"/>
+        <Entry Text="{Binding UsersAdd.Name, Mode==TwoWay}"/>
+        <Label Text="Age"/>
+        <Entry  Text="{Binding UsersAdd.Age, Mode==TwoWay}"/>
+        <Button Text="Post User" 
+                Command="{Binding PostCommand}"/>
+        <Button Text="PUT User" 
+                BackgroundColor="Blue"
+                Command="{Binding PutCommand}"/>
+        <Button Text="Delete User" 
+                BackgroundColor="Red"
+                Command="{Binding DeletetCommand}"/>
+    </StackLayout>
+</ContentPage> 
