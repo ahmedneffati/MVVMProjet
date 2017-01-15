@@ -48,9 +48,17 @@
     <Compile Include="RestClient\RestClient.cs" />
     <Compile Include="RestClient\RestClientString.cs" />
     <Compile Include="Services\JoueurServices.cs" />
+    <Compile Include="Services\TerrainServices.cs" />
     <Compile Include="ViewModels\JoueurViewModel.cs" />
+    <Compile Include="ViewModels\TerrainViewModel.cs" />
     <Compile Include="Views\AddUser.xaml.cs">
       <DependentUpon>AddUser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AjouterJoueur.xaml.cs">
+      <DependentUpon>AjouterJoueur.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AjouterTerrain.xaml.cs">
+      <DependentUpon>AjouterTerrain.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -98,6 +106,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\AddUser.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AjouterJoueur.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\AjouterTerrain.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

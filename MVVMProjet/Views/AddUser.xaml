@@ -22,4 +22,4 @@
                 BackgroundColor="Red"
                 Command="{Binding DeletetCommand}"/>
     </StackLayout>
-</ContentPage> 
+</ContentPage>

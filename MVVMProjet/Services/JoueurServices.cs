@@ -10,7 +10,7 @@ namespace MVVMProjet.Services
 {
     class JoueurServices
     {
-        RestClientString<Joueur> restClient = new RestClientString<Joueur>("http://localhost:49421/api/Joueurs");
+        RestClientString<Joueur> restClient = new RestClientString<Joueur>("http://takwira.azurewebsites.net/api/Joueurs");
     public async Task<List<Joueur>> getJoueursAsync()
     {
             
